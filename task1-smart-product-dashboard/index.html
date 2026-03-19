@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Store</title><link rel="stylesheet" href="style1.css">
+        <script src="script1.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2>Smart Store</h2>
+            <div class="controls">
+                <input type="text" id="search" placeholder="Search products...">
+                <button onclick="toggleMode()">🌙</button>
+                Cart: <span id="cart">0</span>
+            </div>
+        </header>
+        <div class="filter">
+            <button onclick="filterItems('all')">All</button>
+            <button onclick="filterItems('tech')">Tech</button>
+            <button onclick="filterItems('home')">Home</button>
+        </div>
+        <div class="products">
+            <!-- PRODUCTS -->
+             <div class="card" data-name="laptop" data-category="tech">
+                <img src="../public/images/laptop.jpg">
+                <h3>Laptop</h3>
+                <p>₹50,000</p>
+                <button onclick="addCart('Laptop')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="headphones" data-category="tech">
+                <img src="../public/images/headphones.png">
+                <h3>Headphones</h3>
+                <p>₹3,000</p>
+                <button onclick="addCart('Headphones')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="chair" data-category="home">
+                <img src="../public/images/chair.jpg">
+                <h3>Chair</h3>
+                <p>₹2,000</p>
+                <button onclick="addCart('Chair')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="table" data-category="home">
+                <img src="../public/images/table.jpg">
+                <h3>Table</h3>
+                <p>₹5,000</p>
+                <button onclick="addCart('Table')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="mobile" data-category="tech">
+                <img src="../public/images/iphone.png">
+                <h3>Mobile</h3>
+                <p>₹20,000</p>
+                <button onclick="addCart('Mobile')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="watch" data-category="tech">
+                <img src="../public/images/watch.jpg">
+                <h3>Smart Watch</h3>
+                <p>₹4,000</p>
+                <button onclick="addCart('Watch')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="sofa" data-category="home">
+                <img src="../public/images/sofa.jpg">
+                <h3>Sofa</h3>
+                <p>₹15,000</p>
+                <button onclick="addCart('Sofa')">Add to Cart</button>
+            </div>
+
+            <div class="card" data-name="keyboard" data-category="tech">
+                <img src="../public/images/keyboard.jpg">
+                <h3>Keyboard</h3>
+                <p>₹1,500</p>
+                <button onclick="addCart('Keyboard')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="lamp" data-category="home">
+                <img src="../public/images/table light.jpg">
+                <h3>Table Lamp</h3>
+                <p>₹800</p>
+                <button onclick="addCart('Lamp')">Add to Cart</button>
+            </div>
+            <div class="card" data-name="speaker" data-category="tech">
+                <img src="../public/images/speakers.jpg">
+                <h3>Bluetooth Speaker</h3>
+                <p>₹2,500</p>
+                <button onclick="addCart('Speaker')">Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>
