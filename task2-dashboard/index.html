@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>✨ My Dashboard</h1>
+        <div class="container">
+            <!-- CONTACT FORM -->
+            <div class="card">
+                <h2>📩 Contact Form</h2>
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                <button onclick="validateForm()">Send</button>
+                <p id="error"></p>
+            </div>
+            <!-- TODO LIST -->
+            <div class="card">
+                <h2>📝 To-Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="taskInput" placeholder="Add new task...">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
