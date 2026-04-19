@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Madhavi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1>Sri Madhavi</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#todo">To-Do</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+        <h2>About</h2>
+        <p>
+            Web Development Intern building responsive and interactive web apps 
+            using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <a href="https://github.com/SRIMADHAVI99/ApexPlanet-Intern/tree/main/task1-smart-product-dashboard" target="_blank" class="project-card">
+                <h3>Task 1</h3>
+                <p>Smart Product Dashboard</p>
+            </a>
+
+            <a href="https://github.com/SRIMADHAVI99/ApexPlanet-Intern/tree/main/task2-dashboard" target="_blank" class="project-card">
+                <h3>Task 2</h3>
+                <p>Contact + To-Do</p>
+            </a>
+
+            <a href="https://github.com/SRIMADHAVI99/ApexPlanet-Intern/tree/main/task3-advanced-dashboard" target="_blank" class="project-card">
+                <h3>Task 3</h3>
+                <p>Quiz + API</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- TODO -->
+    <section id="todo" class="container">
+        <h2>To-Do</h2>
+
+        <div class="todo-box">
+            <input type="text" id="taskInput" placeholder="Add task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+        <p id="emptyMsg">No tasks yet</p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="container">
+        <h2>Products</h2>
+
+        <div class="filters">
+            <button onclick="setActive(this); filterItems('all')">All</button>
+            <button onclick="setActive(this); filterItems('tech')">Tech</button>
+            <button onclick="setActive(this); filterItems('home')">Home</button>
+            <button onclick="setActive(this); sortItems('low')">Price Low</button>
+            <button onclick="setActive(this); sortItems('high')">Price High</button>
+        </div>
+
+        <div class="products" id="productContainer">
+            <div class="product-card" data-category="tech" data-price="50000">Laptop - ₹50000</div>
+            <div class="product-card" data-category="tech" data-price="20000">Mobile - ₹20000</div>
+            <div class="product-card" data-category="home" data-price="2000">Chair - ₹2000</div>
+            <div class="product-card" data-category="home" data-price="5000">Table - ₹5000</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+
+        <button id="sendBtn">Send</button>
+        <p id="msg"></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
